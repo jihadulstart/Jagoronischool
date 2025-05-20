@@ -713,6 +713,8 @@ section {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .important-item {
@@ -720,8 +722,15 @@ section {
   padding: 2rem 1.5rem;
   border-radius: 8px;
   box-shadow: var(--shadow);
-  min-width: 220px;
+  min-width: 260px;
+  max-width: 320px;
+  min-height: 210px;
+  max-height: 260px;
   text-align: center;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .important-item h3 {
@@ -750,10 +759,17 @@ section {
   color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .important-list {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+  }
+
+  .important-item {
+    min-width: 90vw;
+    max-width: 95vw;
+    min-height: 180px;
+    max-height: none;
   }
 }
