@@ -218,7 +218,7 @@ function changeHeroBackground() {
   heroSection.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${heroImages[currentHeroIndex]}')`;
 }
 
-setInterval(changeHeroBackground, 4000); // Change every 4 seconds
+setInterval(changeHeroBackground, 7000); // Change every 7 seconds
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
