@@ -170,7 +170,7 @@ function loadEventCards() {
       {
         title: 'EID-UL-FITR',
         date: 'February 21, 2024',
-        description: 'EID-UL-FITR is a Muslim festival that celebrates the end of Ramadan, the Islamic holy month of fasting.'
+        description: 'n/a,n/a'
       },
       {
         title: 'Annual Sports Day',
