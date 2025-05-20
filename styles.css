@@ -476,3 +476,31 @@ section {
   background: linear-gradient(135deg, #2196F3, #4CAF50);
   transform: scale(1.08);
 }
+.fab-whatsapp,
+.fab-whatsapp i {
+  text-decoration: none !important;
+}
+
+.fab-whatsapp {
+  position: fixed;
+  bottom: 90px;
+  /* Place above the phone button */
+  right: 24px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.18);
+  z-index: 2000;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.fab-whatsapp:hover {
+  background: #128C7E;
+  transform: scale(1.08);
+}
