@@ -577,3 +577,31 @@ section {
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
+.result-publish {
+  background: var(--light-bg);
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 3rem 0;
+}
+
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.result-item {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  min-width: 180px;
+  text-align: center;
+}
+
+.result-item h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
