@@ -422,7 +422,9 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    word-break: break-word;
   }
 
   .message-content {
