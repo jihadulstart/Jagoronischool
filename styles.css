@@ -455,49 +455,43 @@ footer {
 section {
   animation: fadeIn 1s ease-out;
 }
-.fab-contact {
+.fab-contact,
+.fab-whatsapp {
   position: fixed;
-  bottom: 24px;
   right: 24px;
-  background: linear-gradient(135deg, #4CAF50, #2196F3);
-  color: #fff;
-  border-radius: 50%;
   width: 56px;
   height: 56px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  color: #fff;
   box-shadow: 0 4px 16px rgba(33, 150, 243, 0.18);
   z-index: 2000;
+  text-decoration: none !important;
   transition: background 0.3s, transform 0.2s;
 }
-.fab-contact:hover {
-  background: linear-gradient(135deg, #2196F3, #4CAF50);
-  transform: scale(1.08);
-}
-.fab-whatsapp,
+
+.fab-contact i,
 .fab-whatsapp i {
   text-decoration: none !important;
+  font-size: 2rem;
+}
+
+.fab-contact {
+  bottom: 24px;
+  background: var(--primary-color);
+}
+
+.fab-contact:hover {
+  background: #388E3C;
+  transform: scale(1.08);
 }
 
 .fab-whatsapp {
-  position: fixed;
   bottom: 90px;
-  /* Place above the phone button */
-  right: 24px;
   background: #25D366;
-  color: #fff;
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.18);
-  z-index: 2000;
-  transition: background 0.3s, transform 0.2s;
 }
 
 .fab-whatsapp:hover {
