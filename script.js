@@ -209,4 +209,5 @@ document.addEventListener('DOMContentLoaded', () => {
   loadEventCards();
   updateLanguage();
   initializeNoticeBoard();
+  setupFAQ();
 }); 
