@@ -200,10 +200,6 @@ function setupFAQ() {
       const item = this.parentElement;
       item.classList.toggle('active');
     });
-    btn.addEventListener('touchstart', function () {
-      const item = this.parentElement;
-      item.classList.toggle('active');
-    });
   });
 }
 
