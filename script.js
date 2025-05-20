@@ -170,7 +170,7 @@ function loadEventCards() {
       {
         title: 'EID-UL-FITR',
         date: 'February 21, 2024',
-        description: 'n/a,n/a'
+        description: 'EID-UL-FITR is a Muslim festival that celebrates the end of Ramadan, the Islamic holy month of fasting.'
       },
       {
         title: 'Annual Sports Day',
@@ -202,6 +202,23 @@ function setupFAQ() {
     });
   });
 }
+
+// Hero Section Background Slideshow
+const heroSection = document.querySelector('.hero');
+const heroImages = [
+  'student.jpg',
+  'photo1.jpg',
+  'photo2.jpg',
+  'photo3.jpg'
+];
+let currentHeroIndex = 0;
+
+function changeHeroBackground() {
+  currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
+  heroSection.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${heroImages[currentHeroIndex]}')`;
+}
+
+setInterval(changeHeroBackground, 4000); // Change every 4 seconds
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
