@@ -192,6 +192,17 @@ function loadEventCards() {
   }
 }
 
+// FAQ Section Toggle
+function setupFAQ() {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const item = this.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
   loadGalleryImages();
